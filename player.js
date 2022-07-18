@@ -21,7 +21,7 @@ function label(idx) {
   let col = idx % gridsize;
   let row = Math.floor(idx / gridsize);
 
-  return String.fromCharCode(col+65) + " " + row;
+  return String.fromCharCode(col+65) + " " + (row + 1);
 }
 
 window.addEventListener('load', () => {
